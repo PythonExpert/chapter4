@@ -30,6 +30,9 @@
       function PostMoreDetailsEvent(a) {
         postEvidence($(a).data("userid"), $(a).data("contentid"), 'moredetails');
       };
+      function PostEvent(a, eventType) {
+        postEvidence($(a).data("userid"), $(a).data("contentid"), eventType);
+      };
 
       function PostSaveForLaterEvidence(a) {
         postEvidence($(a).data("userid"), $(a).data("contentid"), 'SaveForLater');
